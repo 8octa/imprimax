@@ -3,7 +3,7 @@
 @theme {
   --background: #171717;
   --foreground: #fff;
-  --font-geist: "Geist", sans-serif
+  --font-geist: "Geist", sans-serif;
 }
 
 .font-geist {
@@ -13,4 +13,21 @@
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+.shine-text-pulse {
+  animation: shine-text-pulse 2s infinite;
+}
+
+@keyframes shine-text-pulse {
+  0%,
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+      0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8),
+      0 0 40px rgba(100, 149, 237, 0.8), 0 0 70px rgba(100, 149, 237, 0.5);
+  }
 }

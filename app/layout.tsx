@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.className} suppressHydrationWarning>
-      <body>{children}</body>
+      <body className={geist.variable}>{children}</body>
     </html>
   );
 }
