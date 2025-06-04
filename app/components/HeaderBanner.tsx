@@ -1,9 +1,11 @@
+import ThemeToggleButton from "./ThemeToggleButton";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function HeaderBanner() {
   return (
-    <header className="relative bg-gradient-to-r from-purple-700 to-blue-700 text-white px-10 py-2 text-xs lg:text-sm font-bold flex justify-between items-center">
-      <div className="flex flex-col md:flex-row items-center md:gap-10">
+    <header className="relative bg-radial from-[#226CE0] to-[#42CAFD] text-white px-10 py-2 text-xs lg:text-sm font-bold flex justify-between items-center">
+      <div className="flex flex-col md:flex-row justify-center items-center md:gap-10">
+        <ThemeToggleButton />
         <a href="tel:+">
           <div className="flex items-center gap-1">
             <Phone strokeWidth={2.5} width={15} fill="white" />

@@ -1,18 +1,44 @@
 @import "tailwindcss";
 
+*,
+*::before,
+*::after {
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @theme {
-  --background: #171717;
-  --foreground: #fff;
+  --color-foreground: #fff;
+  --color-background: #171717;
+  --color-black: #000;
+  --color-dark-gray: #222222;
+  --color-blue: #226ce0;
+  --color-light-blue: #42cafd;
+  --color-brown: #775e3f;
+  --color-orange: #fe9920;
+  --color-dark-orange: #9c6126;
+  --color-yellow: #e7bb41;
+  --color-red: #d74e09;
+  --color-gray: #cac4ce;
+  --color-gold: #f1d9ad;
   --font-geist: "Geist", sans-serif;
+}
+
+.light {
+  --color-background: #cac4ce;
+  --color-foreground: #171717;
+  --color-blue: #42cafd;
+  --color-light-blue: #226ce0;
+  --color-black: #fff;
+}
+body {
+  background: var(--color-background);
 }
 
 .font-geist {
   font-family: var(--font-geist), system-ui, sans-serif;
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
 }
 
 .shine-text-pulse {
@@ -30,4 +56,9 @@ body {
       0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8),
       0 0 40px rgba(100, 149, 237, 0.8), 0 0 70px rgba(100, 149, 237, 0.5);
   }
+}
+
+#hero {
+  background-image: url("/wavey-fingerprint.svg");
+  background-size: full;
 }
