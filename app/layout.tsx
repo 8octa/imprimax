@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     url: "https://imprimax-solutions.com",
     images: [
       {
-        url: "/sigla.svg",
+        url: "sigla.svg",
         width: 1200,
         height: 630,
         alt: "Imprimax Solutions Logo",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Imprimax Solutions",
     description: "Printing Solutions for Your Business",
-    images: ["/sigla.svg"],
+    images: ["sigla.svg"],
   },
 };
 
