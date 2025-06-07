@@ -1,11 +1,11 @@
 import HeaderBanner from "./components/HeaderBanner";
-import Hero from "./components/Hero";
+import { MacbookHero } from "./components/MacbookHero";
 
 export default function Home() {
   return (
     <>
       <HeaderBanner />
-      <Hero />
+      <MacbookHero />
     </>
   );
 }
