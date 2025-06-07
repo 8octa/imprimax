@@ -24,13 +24,13 @@ export const metadata: Metadata = {
     title: "Imprimax Solutions",
     description: "Printing Solutions for Your Business",
     url: "https://imprimax-solutions.com",
-    images: ["/sigla.svg"],
+    images: ["sigla-vector.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Imprimax Solutions",
     description: "Printing Solutions for Your Business",
-    images: ["/sigla.svg"],
+    images: ["sigla-vector.jpg"],
   },
 };
 
