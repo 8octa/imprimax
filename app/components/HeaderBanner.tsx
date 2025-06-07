@@ -12,7 +12,9 @@ export default function HeaderBanner() {
         duration: 0.4,
         scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
       }}
-      className="fixed top-0 left-0 z-1000 w-full bg-gradient-to-r from-[#4290fd] via-[#193a58] to-[#4290fd] text-white px-10 py-2 text-xs lg:text-sm font-bold flex justify-center md:justify-between  gap-10 items-center"
+      className="fixed top-0 left-0 z-1000 w-full bg-gradient-to-r from-[#4290fd] via-[#193a58]
+       to-[#4290fd] text-white px-10 py-2 text-xs lg:text-sm font-bold flex justify-center
+        md:justify-between gap-10 items-center"
     >
       <div className="flex flex-row justify-center items-center gap-10">
         <ThemeToggleButton />
@@ -26,9 +28,7 @@ export default function HeaderBanner() {
               scale: 1.1,
               transition: { duration: 0.3 },
             }}
-            className="flex items-center gap-1 transform transition-transform duration-300
-            ease-in
-            hover:scale-110"
+            className="flex items-center gap-1"
           >
             <Phone strokeWidth={2.5} width={15} fill="white" />
             <p className="hidden xl:block">0730 768 123</p>
