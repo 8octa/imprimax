@@ -16,7 +16,29 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: "Imprimax Solutions",
-  description: "Printing",
+  description: "Printing Solutions for Your Business",
+  icons: {
+    icon: "/sigla.svg",
+  },
+  openGraph: {
+    title: "Imprimax Solutions",
+    description: "Printing Solutions for Your Business",
+    url: "https://imprimax-solutions.com",
+    images: [
+      {
+        url: "/sigla.svg",
+        width: 1200,
+        height: 630,
+        alt: "Imprimax Solutions Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Imprimax Solutions",
+    description: "Printing Solutions for Your Business",
+    images: ["/sigla.svg"],
+  },
 };
 
 export default function RootLayout({

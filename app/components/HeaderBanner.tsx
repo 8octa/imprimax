@@ -1,11 +1,19 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import ThemeToggleButton from "./ThemeToggleButton";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function HeaderBanner() {
   return (
-    <header className="fixed top-0 left-0 z-1000 w-full bg-gradient-to-r from-[#4290fd] via-[#013a96] to-[#4290fd] text-white px-10 py-2 text-xs lg:text-sm font-bold flex justify-center md:justify-between  gap-10 items-center">
+    <motion.div
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.4,
+        scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+      }}
+      className="fixed top-0 left-0 z-1000 w-full bg-gradient-to-r from-[#4290fd] via-[#193a58] to-[#4290fd] text-white px-10 py-2 text-xs lg:text-sm font-bold flex justify-center md:justify-between  gap-10 items-center"
+    >
       <div className="flex flex-row justify-center items-center gap-10">
         <ThemeToggleButton />
         <a href="tel:+">
@@ -70,6 +78,6 @@ export default function HeaderBanner() {
           <p className="hidden xl:block">Vino în locație</p>
         </motion.div>
       </a>
-    </header>
+    </motion.div>
   );
 }
