@@ -1,11 +1,9 @@
-import HeaderBanner from "./components/HeaderBanner";
-import { MacbookHero } from "./components/MacbookHero";
+import { UnderConstruction } from "./components/UnderConstruction";
 
 export default function Home() {
   return (
     <>
-      <HeaderBanner />
-      <MacbookHero />
+      <UnderConstruction />
     </>
   );
 }

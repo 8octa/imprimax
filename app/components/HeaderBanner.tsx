@@ -12,13 +12,13 @@ export default function HeaderBanner() {
         duration: 0.4,
         scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
       }}
-      className="fixed top-0 left-0 z-1000 w-full bg-gradient-to-r from-[#4290fd] via-[#193a58]
+      className="fixed top-0 left-0 z-1000 w-full bg-gradient-to-r from-[#4290fd] via-[#9500ff]
        to-[#4290fd] text-white px-10 py-2 text-xs lg:text-sm font-bold flex justify-center
         md:justify-between gap-10 items-center"
     >
       <div className="flex flex-row justify-center items-center gap-10">
         <ThemeToggleButton />
-        <a href="tel:+">
+        <a href="tel:+40724274102">
           <motion.div
             key="phone"
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
@@ -31,11 +31,11 @@ export default function HeaderBanner() {
             className="flex items-center gap-1"
           >
             <Phone strokeWidth={2.5} width={15} fill="white" />
-            <p className="hidden xl:block">0730 768 123</p>
+            <p className="hidden xl:block">0724 274 102</p>
           </motion.div>
         </a>
 
-        <a href="mailto:">
+        <a href="mailto:imprimaxsolutions@yahoo.com">
           <motion.div
             key="mail"
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
@@ -48,14 +48,14 @@ export default function HeaderBanner() {
             className="flex items-center gap-1"
           >
             <Mail strokeWidth={2.5} width={15} />
-            <p className="hidden xl:block">print@gmail.com</p>
+            <p className="hidden xl:block">imprimaxsolutions@yahoo.com</p>
           </motion.div>{" "}
         </a>
       </div>
 
-      <div className="hidden absolute left-1/2 -translate-x-1/2 md:flex items-center text-center font-geist">
+      <div className="hidden absolute left-1/2 -translate-x-1/2 md:flex items-center text-center">
         <p className="shine-text-pulse tracking-wider rounded-lg cursor-default">
-          Transport gratuit la comenzile de peste 1000 RON
+          Bine ați venit pe website-ul nostru! <br />
         </p>
       </div>
 
