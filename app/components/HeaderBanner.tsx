@@ -75,7 +75,7 @@ export default function HeaderBanner() {
           className="flex items-center gap-1"
         >
           <MapPin strokeWidth={2.5} width={15} />
-          <p className="hidden xl:block">Vino în locație</p>
+          <p className="hidden xl:block">Hai în atelier!</p>
         </motion.div>
       </a>
     </motion.div>

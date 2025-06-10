@@ -1,7 +1,11 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import type { Metadata } from "next";
 import { Poppins, Geist } from "next/font/google";
 import HeaderBanner from "./components/HeaderBanner";
+
+
+
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,19 +23,19 @@ export const metadata: Metadata = {
   title: "Imprimax Solutions",
   description: "Printing Solutions for Your Business",
   icons: {
-    icon: "/sigla_32x32.svg",
+    icon: "/sigla.svg",
   },
   openGraph: {
     title: "Imprimax Solutions",
     description: "Printing Solutions for Your Business",
-    url: "https://imprimax-solutions.com",
-    images: ["sigla_32x32.svg"],
+    url: "https://imprimaxsolutions.com",
+    images: ["sigla.svg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Imprimax Solutions",
     description: "Printing Solutions for Your Business",
-    images: ["sigla_32x32.svg"],
+    images: ["sigla.svg"],
   },
 };
 

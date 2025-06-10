@@ -168,7 +168,7 @@ export const Lid = ({
         <img
           src={src as string}
           alt="imprimax logo"
-          className="absolute inset-0 h-full w-full rounded-lg object-cover object-left-top"
+          className="absolute inset-0 h-full w-full rounded-lg object-cover "
         />
       </motion.div>
     </div>

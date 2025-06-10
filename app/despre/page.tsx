@@ -1,7 +1,7 @@
 import React from "react";
 
-const page = () => {
-  return <div>page</div>;
+const Despre = () => {
+  return <div>Despre</div>;
 };
 
-export default page;
+export default Despre;
