@@ -2,10 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins, Geist } from "next/font/google";
 import HeaderBanner from "./components/HeaderBanner";
-
-
-
-
+import Footer from "./components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,21 +19,6 @@ const geist = Geist({
 export const metadata: Metadata = {
   title: "Imprimax Solutions",
   description: "Printing Solutions for Your Business",
-  icons: {
-    icon: "/sigla.svg",
-  },
-  openGraph: {
-    title: "Imprimax Solutions",
-    description: "Printing Solutions for Your Business",
-    url: "https://imprimaxsolutions.com",
-    images: ["sigla.svg"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Imprimax Solutions",
-    description: "Printing Solutions for Your Business",
-    images: ["sigla.svg"],
-  },
 };
 
 export default function RootLayout({
@@ -46,9 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.className} suppressHydrationWarning>
-      <body className={geist.variable}>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+      <body suppressHydrationWarning className={geist.variable}>
         {children}
         <HeaderBanner />
+        <Footer />
       </body>
     </html>
   );

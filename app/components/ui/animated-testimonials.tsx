@@ -43,8 +43,11 @@ export const AnimatedTestimonials = ({
     return Math.floor(Math.random() * 21) - 10;
   };
   return (
-    <div className="mx-auto max-w-sm px-4 py-50 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12 text-foreground">
-      <h2 className="text-3xl md:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/[0.5] bg-opacity-50 mb-50">
+    <div
+      suppressHydrationWarning
+      className="mx-auto max-w-sm px-4 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12 text-foreground"
+    >
+      <h2 className="text-3xl md:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/[0.5] bg-opacity-50 my-10 md:my-20">
         Testimoniale
       </h2>
       <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
@@ -115,12 +118,8 @@ export const AnimatedTestimonials = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-2xl font-bold ">
-              {testimonials[active].name}
-            </h3>
-            <p className="text-sm ">
-              {testimonials[active].designation}
-            </p>
+            <h3 className="text-2xl font-bold ">{testimonials[active].name}</h3>
+            <p className="text-sm ">{testimonials[active].designation}</p>
             <motion.p className="mt-8 text-lg ">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span

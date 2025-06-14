@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <div className="h-[55rem] w-full rounded-md flex flex-col items-center justify-center bg-background/[0.9] antialiased bg-grid-white/[0.02] relative overflow-hidden text-foreground">
+    <div className="h-[40rem] md:h-[55rem] w-full rounded-md flex flex-col items-center justify-center bg-background/[0.9] antialiased bg-grid-white/[0.02] relative overflow-hidden text-foreground shadow-sm shadow-black/10 inset-shadow-sm">
       <Spotlight />
       <div className="p-4 max-w-7xl mx-auto relative z-10  w-full pt-20 md:pt-0">
         <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/[0.5] bg-opacity-50">
@@ -16,7 +16,7 @@ export function Hero() {
           Realizăm printuri și personalizări care transformă orice spațiu.
         </p>
       </div>
-      <Link href={"/form"}>
+      <Link href={"/contact"}>
         <Button text={"Solicită oferta"} />
       </Link>
 
