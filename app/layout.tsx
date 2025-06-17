@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins, Geist } from "next/font/google";
 import HeaderBanner from "./components/HeaderBanner";
+import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 
 const poppins = Poppins({
@@ -30,8 +31,10 @@ export default function RootLayout({
     <html lang="en" className={poppins.className} suppressHydrationWarning>
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body suppressHydrationWarning className={geist.variable}>
-        {children}
         <HeaderBanner />
+        <Menu />
+        {children}
+
         <Footer />
       </body>
     </html>

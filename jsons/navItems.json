@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Despre Noi",
+    "link": "/despre"
+  },
+  {
+    "name": "Produse și Servicii",
+    "link": "/produse"
+  },
+  {
+    "name": "Portofoliu",
+    "link": "/portofoliu"
+  },
+  {
+    "name": "Cere Ofertă",
+    "link": "/oferta"
+  },
+  {
+    "name": "Blog",
+    "link": "/blog"
+  },
+  {
+    "name": "Contact",
+    "link": "/contact"
+  }
+]

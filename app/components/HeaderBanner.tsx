@@ -13,7 +13,7 @@ export default function HeaderBanner() {
         scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
       }}
       className="fixed top-0 left-0 z-1000 w-full bg-gradient-to-r from-[#4290fd] via-[#9500ff]
-       to-[#4290fd] text-white px-10 py-2 text-xs lg:text-sm font-bold flex justify-center
+       to-[#4290fd] text-white px-10 py-1 text-xs lg:text-sm font-bold flex justify-center
         md:justify-between gap-10 items-center"
     >
       <div className="flex flex-row justify-center items-center gap-10">
