@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils";
 import { sendEmail } from "../sendEmails";
 import { useActionState } from "react";
 import { HashLoader } from "react-spinners";
-import { span } from "motion/react-client";
 
 type FormState = {
   success: boolean;

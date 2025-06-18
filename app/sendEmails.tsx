@@ -3,7 +3,6 @@
 import { Resend } from "resend";
 import EmailComponent from "./components/EmailComponent";
 
-
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 if (!RESEND_API_KEY) {
   throw new Error("Missing RESEND_API_KEY environment variable");
@@ -55,7 +54,7 @@ export const sendEmail = async (formData: FormData) => {
       from: "Cere ofertă <onboarding@resend.dev>",
       to: "tataruoctavian5@gmail.com",
       subject: "Mesaj prin formular",
-      reply_to: senderEmail,
+      replyTo: senderEmail,
       text: `Name: ${firstname} ${lastname}\nEmail: ${senderEmail}\nProject: ${projecttype}\nSize: ${width}x${height}`,
       react: (
         <EmailComponent
