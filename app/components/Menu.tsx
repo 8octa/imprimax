@@ -62,7 +62,15 @@ export default function Menu() {
               </a>
             ))}
             <div className="flex w-full flex-col gap-4">
-              <Button text={"ceva"} />
+              <button className="cursor-pointer z-50">
+                <a
+                  href="https://wa.me/+40724274102"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaWhatsapp size={30} className="text-xl text-[#25D366]" />
+                </a>
+              </button>
             </div>
           </MobileNavMenu>
         </MobileNav>

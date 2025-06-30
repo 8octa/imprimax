@@ -8,6 +8,7 @@ import {
   useMotionValueEvent,
 } from "motion/react";
 import Link from "next/link";
+import Image from "next/image";
 
 import React, { useRef, useState } from "react";
 
@@ -68,7 +69,7 @@ export const Navbar = ({ children, className }: NavbarProps) => {
   return (
     <motion.div
       ref={ref}
-      className={cn("fixed inset-x-0 top-15 z-40 w-full", className)}
+      className={cn("fixed inset-x-0 top-15 z-50 w-full", className)}
     >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
@@ -234,13 +235,8 @@ export const NavbarLogo = () => {
       href="/acasa"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <img
-        src="https://assets.aceternity.com/logo-dark.png"
-        alt="logo"
-        width={30}
-        height={30}
-      />
-      <span className="font-medium text-black dark:text-white">Startup</span>
+ 
+      <Image width={50} height={50} src="/navbar-logo.png" alt="Imprimax Logo" />
     </Link>
   );
 };

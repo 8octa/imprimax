@@ -1,0 +1,79 @@
+[
+  {
+    "type": "header",
+    "title": "✅ Cum să Obținem Rezultate Profesionale:",
+    "intro": "Indiferent dacă lucrăm la un pliant, un afiș, o carte de vizită sau un catalog, designul pentru tipar necesită atenție la detalii și respectarea unor reguli esențiale. Spre deosebire de designul digital, cel destinat printului vine cu limitări specifice și cerințe tehnice clare. Iată cele mai importante sfaturi pe care le urmăm pentru un rezultat profesionist:"
+  },
+  {
+    "type": "section",
+    "id": 1,
+    "title": "🖨️ Setăm corect dimensiunile și rezoluția",
+    "points": [
+      "Rezoluție recomandată: 300 DPI (dots per inch). Este standardul pentru tipar de calitate.",
+      "Dimensiunea exactă: Folosesim dimensiunile finale ale produsului, adăugând marginile de bleed (3 mm).",
+      "Bleed: Spațiul în plus care se taie după print, evitând margini albe."
+    ]
+  },
+  {
+    "type": "section",
+    "id": 2,
+    "title": "🎨 Folosesim modul de culoare CMYK, nu RGB",
+    "text": "CMYK este standardul pentru imprimare. RGB este destinat doar pentru ecrane – culorile pot apărea diferit la tipar."
+  },
+  {
+    "type": "section",
+    "id": 3,
+    "title": "✍️ Alegem fonturi lizibile și evităm suprasaturarea",
+    "points": [
+      "Fonturi clare: Evităm fonturile fanteziste în blocuri mari de text.",
+      "Contrast: Ne asigurăm că textul are contrast suficient față de fundal.",
+      "Minimum de mărime: Nu coborâm sub 6-7 pt astfel textul devine ilizibil la tipar."
+    ]
+  },
+  {
+    "type": "section",
+    "id": 4,
+    "title": "📐 Respectăm spațiile de siguranță (margini interioare)",
+    "text": "Nu plasam text sau elemente importante prea aproape de margini – lasăm cel puțin 5 mm distanță pentru a evita tăierile accidentale."
+  },
+  {
+    "type": "section",
+    "id": 5,
+    "title": "📁 Exportăm corect fișierul",
+    "points": [
+      "Format ideal: PDF cu crop marks și bleed inclus.",
+      "Alte formate: TIFF, EPS, AI – dar PDF este cel mai sigur.",
+      "Converteștim fonturile în curbe (outline) sau le încarcăm în fișier."
+    ]
+  },
+  {
+    "type": "section",
+    "id": 6,
+    "title": "🖼️ Folosesim imagini de înaltă calitate",
+    "points": [
+      "Evităm pozele de pe internet – au rezoluție slabă.",
+      "Foloseim imagini 300 DPI, adaptate dimensiunilor din layout.",
+      "Imaginile pixelate strică întreg designul."
+    ]
+  },
+  {
+    "type": "section",
+    "id": 7,
+    "title": "✅ Facem o probă de print (proof)",
+    "text": "Înainte de tirajul final, creeăm o mostră pentru a verifica culorile, tăieturile și calitatea. E mai ieftin să corectezi din timp."
+  },
+  {
+    "type": "section",
+    "id": 8,
+    "title": "🔁 Colaborăm eficient cu tipografia",
+    "points": [
+      "Respectăm cerințele tehnice.",
+      "Comunicăm opțiunile dorite (hârtie, finisaje, gramaj)."
+    ]
+  },
+  {
+    "type": "conclusion",
+    "title": "Concluzie",
+    "text": "Designul pentru print nu este doar o chestiune de estetică, ci și una de precizie tehnică. Respectarea regulilor de bază înseamnă economii de timp și bani, dar și o imagine profesională. Cu puțină atenție și planificare, materialele tipărite pot deveni instrumente puternice de comunicare vizuală."
+  }
+]
