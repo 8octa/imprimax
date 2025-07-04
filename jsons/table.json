@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "service": "Tablouri Canvas",
+    "url": "/produse/pret-canvas",
+    "price": {
+      "20cm x 30cm": 50,
+      "30cm x 40cm": 70,
+      "35cm x 50cm": 80,
+      "40cm x 50cm": 90,
+      "50cm x 60cm": 100,
+      "50cm x 70cm": 150,
+      "50cm x 80cm": 200,
+      "60cm x 90cm": 230,
+      "70m x 90cm": 240,
+      "80cm x 100cm": 260,
+      "90cm x 120cm": 280,
+      "100cm x 120cm": 300,
+      "140cm x 150cm": 370,
+      "140cm x 160cm": 600,
+      "140cm x 200cm": 1000
+    }
+  },
+  {
+    "id": 2,
+    "service": "Tablouri de Sticla",
+    "url": "/tablouri"
+  },
+  {
+    "id": 3,
+    "service": "Tablouri cu LED",
+    "url": "/pret"
+  },
+  {
+    "id": 4,
+    "service": "Bannere",
+    "url": "/tablouri"
+  },
+  {
+    "id": 5,
+    "service": "Colante",
+    "url": "/tablouri"
+  },
+  {
+    "id": 6,
+    "service": "Tricouri Personalizate",
+    "url": "/tablouri"
+  }
+]

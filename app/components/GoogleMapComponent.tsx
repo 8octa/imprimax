@@ -8,6 +8,8 @@ import {
 } from "@react-google-maps/api";
 import { useMemo, useState } from "react";
 import { FaLocationArrow } from "react-icons/fa";
+import { SquareLoader } from "react-spinners";
+import type { Libraries } from "@react-google-maps/api";
 
 function GoogleMapComponent() {
   const [clickPin, setClickPin] = useState(true);
@@ -16,7 +18,7 @@ function GoogleMapComponent() {
     setClickPin((prevClickPin) => !prevClickPin);
   };
 
-  const libraries = useMemo(() => ["places"], []);
+  const libraries = useMemo<Libraries>(() => ["places"], []);
 
   const mapCenter = useMemo(() => ({ lat: 44.9848723, lng: 25.6403603 }), []);
 
@@ -31,11 +33,11 @@ function GoogleMapComponent() {
 
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_MAP_KEY as string,
-    libraries: libraries as any,
+    libraries,
   });
 
   if (!isLoaded) {
-    return <p>Loading...</p>;
+    return <SquareLoader size={50} color="#f9f9f9f9" />;
   }
 
   return (
@@ -45,7 +47,7 @@ function GoogleMapComponent() {
         zoom={14}
         center={mapCenter}
         mapTypeId={google.maps.MapTypeId.ROADMAP}
-        mapContainerClassName="w-[300px] h-[300px] md:w-[700px] md:h-[700px] lg:w-[1000px] lg:h-[1000px] mx-auto"
+        mapContainerClassName="w-[300px] h-[300px] md:w-[500px] md:h-[500px] xl:w-[1000px] xl:h-[1000px] mx-auto"
       >
         <MarkerF
           onClick={handleClickPin}

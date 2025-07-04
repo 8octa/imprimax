@@ -15,22 +15,21 @@ export function Feature() {
         "Imprimax Solutions e visul transformat în realitate al lui Cosmin – un specialist cu ani de experiență în design de mobilier și branding fizic.",
       skeleton: <SkeletonOne />,
       className:
-        "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
+        "col-span-1 lg:col-span-4 border-b lg:border-r border-dark-gray text-foreground",
     },
     {
       title: "Epson SureColor S30600",
       description:
         "Credem în personalizare, promptitudine și în soluții bine gândite care funcționează și arată excelent.",
       skeleton: <SkeletonTwo />,
-      className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
+      className: "border-b col-span-1 lg:col-span-2 border-dark-gray",
     },
     {
       title: "🎯 Misiunea noastră",
       description:
         "Să oferim soluții vizuale personalizate și eficiente, adaptate fiecărui spațiu.",
       skeleton: <SkeletonThree />,
-      className:
-        "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
+      className: "col-span-1 lg:col-span-3 lg:border-r border-dark-gray",
     },
     {
       title: "🌱 Viziune",
@@ -48,8 +47,8 @@ export function Feature() {
         </h1>
       </div>
 
-      <div className="relative ">
-        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md dark:border-neutral-800">
+      <div className="relative border-dark-gray">
+        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md">
           {features.map((feature) => (
             <FeatureCard key={feature.title} className={feature.className}>
               <FeatureTitle>{feature.title}</FeatureTitle>
@@ -79,7 +78,7 @@ const FeatureCard = ({
 
 const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
   return (
-    <p className=" max-w-5xl mx-auto text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
+    <p className=" max-w-5xl mx-auto text-left tracking-tight text-foreground text-xl md:text-2xl md:leading-snug">
       {children}
     </p>
   );
@@ -102,7 +101,7 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
 export const SkeletonOne = () => {
   return (
     <div className="relative flex py-8 px-2 gap-10 h-full">
-      <div className="w-full  p-5  mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
+      <div className="w-full  p-5  mx-auto bg-dark-gray shadow-2xl group h-full">
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}
           <Image
@@ -115,8 +114,8 @@ export const SkeletonOne = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-white dark:from-black via-white dark:via-black to-transparent w-full pointer-events-none" />
-      <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-white dark:from-black via-transparent to-transparent w-full pointer-events-none" />
+      <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-foreground dark:from-black via-foreground dark:via-black to-transparent w-full pointer-events-none" />
+      <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-foreground dark:from-black via-transparent to-transparent w-full pointer-events-none" />
     </div>
   );
 };
@@ -131,8 +130,8 @@ export const SkeletonThree = () => {
       <div className="w-full  mx-auto bg-transparent dark:bg-transparent group h-full">
         <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
           {/* TODO */}
-          <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " />
-          <img
+          <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto" />
+          <Image
             src="https://assets.aceternity.com/fireship.jpg"
             alt="header"
             width={800}
@@ -179,9 +178,9 @@ export const SkeletonTwo = () => {
             }}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 shrink-0 overflow-hidden"
+            className="rounded-xl -mr-4 mt-4 p-1 bg-dark-gray border border-dark-gray shrink-0 overflow-hidden"
           >
-            <img
+            <Image
               src={image}
               alt="bali images"
               width="500"
@@ -201,9 +200,9 @@ export const SkeletonTwo = () => {
             variants={imageVariants}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 shrink-0 overflow-hidden"
+            className="rounded-xl -mr-4 mt-4 p-1 bg-dark-gray border border-dark-gray shrink-0 overflow-hidden"
           >
-            <img
+            <Image
               src={image}
               alt="bali images"
               width="500"
@@ -214,8 +213,8 @@ export const SkeletonTwo = () => {
         ))}
       </div>
 
-      <div className="absolute left-0 z-[100] inset-y-0 w-20 bg-gradient-to-r from-white dark:from-black to-transparent  h-full pointer-events-none" />
-      <div className="absolute right-0 z-[100] inset-y-0 w-20 bg-gradient-to-l from-white dark:from-black  to-transparent h-full pointer-events-none" />
+      <div className="absolute left-0 z-[100] inset-y-0 w-20 bg-gradient-to-r from-foreground dark:from-black to-transparent  h-full pointer-events-none" />
+      <div className="absolute right-0 z-[100] inset-y-0 w-20 bg-gradient-to-l from-foreground dark:from-black  to-transparent h-full pointer-events-none" />
     </div>
   );
 };

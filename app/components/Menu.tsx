@@ -11,7 +11,6 @@ import {
 } from "./ui/resizable-navbar";
 import { useState } from "react";
 import navItems from "../../jsons/navItems.json";
-import Button from "./Button";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function Menu() {

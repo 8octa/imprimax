@@ -1,6 +1,7 @@
 import React from "react";
 import { DraggableCardBody, DraggableCardContainer } from "./ui/draggable-card";
 import images from "../../jsons/images.json";
+import Image from "next/image";
 
 export function DraggableCard() {
   return (
@@ -10,7 +11,7 @@ export function DraggableCard() {
       </p>
       {images.map((item) => (
         <DraggableCardBody key={item.image} className={item.className}>
-          <img
+          <Image
             src={item.image}
             alt={item.title}
             className="pointer-events-none relative z-10 h-80 w-80 object-cover"
