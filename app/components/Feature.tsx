@@ -104,7 +104,7 @@ export const SkeletonOne = () => {
       <div className="w-full  p-5  mx-auto bg-dark-gray shadow-2xl group h-full">
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}
-          <Image
+          <img
             src="/cosmin-atelier.jpg"
             alt="Cosmin Ivana în atelierul Imprimax Solutions"
             width={1350}
@@ -123,7 +123,7 @@ export const SkeletonOne = () => {
 export const SkeletonThree = () => {
   return (
     <a
-      href="https://www.youtube.com/watch?v=RPa3_AD1_Vs"
+      href="https://www.instagram.com/p/DLvRuH_iOk_/"
       target="__blank"
       className="relative flex gap-10  h-full group/image"
     >
@@ -131,7 +131,7 @@ export const SkeletonThree = () => {
         <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
           {/* TODO */}
           <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto" />
-          <Image
+          <img
             src="https://assets.aceternity.com/fireship.jpg"
             alt="header"
             width={800}
@@ -180,7 +180,7 @@ export const SkeletonTwo = () => {
             whileTap="whileTap"
             className="rounded-xl -mr-4 mt-4 p-1 bg-dark-gray border border-dark-gray shrink-0 overflow-hidden"
           >
-            <Image
+            <img
               src={image}
               alt="bali images"
               width="500"
@@ -202,7 +202,7 @@ export const SkeletonTwo = () => {
             whileTap="whileTap"
             className="rounded-xl -mr-4 mt-4 p-1 bg-dark-gray border border-dark-gray shrink-0 overflow-hidden"
           >
-            <Image
+            <img
               src={image}
               alt="bali images"
               width="500"

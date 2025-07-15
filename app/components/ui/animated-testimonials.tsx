@@ -88,7 +88,7 @@ export const AnimatedTestimonials = ({
                   className="absolute inset-0 origin-bottom"
                 >
                   <Image
-                    src={testimonial.src}
+                    src={null}
                     alt={testimonial.name}
                     width={500}
                     height={500}
