@@ -43,7 +43,6 @@ const Acasa = () => {
         </div>
       </div>
 
-      {/* <Testimonials /> */}
       <MyCarousel />
       <h2>Tipuri de servicii:</h2>
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-center md:justify-between items-start gap-10 border-b-1 border-x-1 border-foreground/[0.04] text-xl w-full p-15 my-15">
