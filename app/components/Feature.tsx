@@ -5,7 +5,6 @@ import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { IconBrandYoutubeFilled } from "@tabler/icons-react";
-import Image from "next/image";
 
 export function Feature() {
   const features = [
