@@ -4,7 +4,8 @@ import { cn } from "@/lib/utils";
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
-import { IconBrandYoutubeFilled } from "@tabler/icons-react";
+import { IconPlayerPlayFilled } from "@tabler/icons-react";
+import Image from "next/image";
 
 export function Feature() {
   const features = [
@@ -103,8 +104,8 @@ export const SkeletonOne = () => {
       <div className="w-full  p-5  mx-auto bg-dark-gray shadow-2xl group h-full">
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}
-          <img
-            src="/cosmin-atelier.jpg"
+          <Image
+            src="/despre/cosmin-atelier.webp"
             alt="Cosmin Ivana în atelierul Imprimax Solutions"
             width={1350}
             height={1080}
@@ -129,9 +130,9 @@ export const SkeletonThree = () => {
       <div className="w-full  mx-auto bg-transparent dark:bg-transparent group h-full">
         <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
           {/* TODO */}
-          <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto" />
-          <img
-            src="https://assets.aceternity.com/fireship.jpg"
+          <IconPlayerPlayFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto" />
+          <Image
+            src="/despre/instagram-thumbnail.png"
             alt="header"
             width={800}
             height={800}
@@ -145,11 +146,9 @@ export const SkeletonThree = () => {
 
 export const SkeletonTwo = () => {
   const images = [
-    "https://images.unsplash.com/photo-1517322048670-4fba75cbbb62?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1573790387438-4da905039392?q=80&w=3425&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1554931670-4ebfabf6e7a9?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "/despre/imprimanta-1.webp",
+    "/despre/imprimanta-2.webp",
+    "/despre/imprimanta-3.webp",
   ];
 
   const imageVariants = {
@@ -179,9 +178,9 @@ export const SkeletonTwo = () => {
             whileTap="whileTap"
             className="rounded-xl -mr-4 mt-4 p-1 bg-dark-gray border border-dark-gray shrink-0 overflow-hidden"
           >
-            <img
+            <Image
               src={image}
-              alt="bali images"
+              alt="Epson SureColor S30600"
               width="500"
               height="500"
               className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover shrink-0"
@@ -201,9 +200,9 @@ export const SkeletonTwo = () => {
             whileTap="whileTap"
             className="rounded-xl -mr-4 mt-4 p-1 bg-dark-gray border border-dark-gray shrink-0 overflow-hidden"
           >
-            <img
+            <Image
               src={image}
-              alt="bali images"
+              alt="Epson SureColor S30600"
               width="500"
               height="500"
               className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover shrink-0"
