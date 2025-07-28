@@ -2,17 +2,15 @@
 import React from "react";
 import Button from "../components/Button";
 import Link from "next/link";
-import GoogleMapComponent from "../components/GoogleMapComponent";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const page = () => {
   return (
     <section className="flex flex-col justify-center items-center max-w-screen-xl p-10 mt-[10rem] md:mt-[15rem] mx-auto text-foreground">
-      <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/[0.5] bg-opacity-50 my-15">
+      <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/[0.5] bg-opacity-50 my-5">
         Contact
       </h1>
 
-      <GoogleMapComponent />
 
       <section className="flex flex-col items-center justify-center text-center gap-10 py-15">
         <span className="text-3xl lg:text-5xl">

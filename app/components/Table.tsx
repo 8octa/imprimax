@@ -25,7 +25,12 @@ const Table = () => {
           <tr key={id}>
             <td className="border border-foreground p-5">{service}</td>
             <td className="border border-foreground p-5">
-              <Link href={url}>Vezi tot</Link>
+              <Link
+                className="text-blue-500 hover:text-blue-600 underline"
+                href={url}
+              >
+                Vezi tot
+              </Link>
             </td>
           </tr>
         ))}
