@@ -10,23 +10,38 @@ const projects = [
     title: "Good Vibes Travel",
     description: "Banner personalizat",
     category: "Bannere",
+<<<<<<< Updated upstream
     before: "/cosmin-atelier.jpg",
     after: "/cosmin-atelier.jpg",
+=======
+    before: "/despre/cosmin-atelier.webp",
+    after: "/despre/cosmin-atelier.webp",
+>>>>>>> Stashed changes
     clientLogo: "/file.svg",
   },
   {
     title: "Good Vibes Travel",
     description: "Canvas personalizat",
     category: "Promo",
+<<<<<<< Updated upstream
     image: "/cosmin-atelier.jpg",
     clientLogo: "/file.svg"
+=======
+    image: "/despre/cosmin-atelier.webp",
+    clientLogo: "/file.svg",
+>>>>>>> Stashed changes
   },
   {
     title: "Good Vibes Travel",
     description: "Colant personalizat",
     category: "Gravare",
+<<<<<<< Updated upstream
     before: "/cosmin-atelier.jpg",
     after: "/cosmin-atelier.jpg",
+=======
+    before: "/despre/cosmin-atelier.webp",
+    after: "/despre/cosmin-atelier.webp",
+>>>>>>> Stashed changes
     clientLogo: "/file.svg",
   },
   // Adaugă mai multe proiecte aici...
@@ -46,9 +61,15 @@ const Portofoliu = () => {
         Portofoliu
       </h1>
       <h2 className="text-2xl md:text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/[0.5] bg-opacity-50 my-10 mb-25">
+<<<<<<< Updated upstream
        Lucrările noastre vorbesc de la sine
       </h2>
       
+=======
+        Lucrările noastre vorbesc de la sine
+      </h2>
+
+>>>>>>> Stashed changes
       <div className="flex gap-4 mb-8">
         {categories.map((cat) => (
           <button
