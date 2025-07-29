@@ -52,7 +52,7 @@ export const sendEmail = async (formData: FormData) => {
 
     const result = await resend.emails.send({
       from: "Cere ofertă <onboarding@resend.dev>",
-      to: "tataruoctavian5@gmail.com",
+      to: "imprimaxsolutions@yajoo.com",
       subject: "Mesaj prin formular",
       replyTo: senderEmail,
       text: `Name: ${firstname} ${lastname}\nEmail: ${senderEmail}\nProject: ${projecttype}\nSize: ${width}x${height}`,
