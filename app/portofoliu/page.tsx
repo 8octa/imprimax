@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-const categories = ["Toate", "Bannere", "Promo", "Gravare"];
+const categories = ["Toate", "Bannere", "Canvas", "Colant"];
 
 const projects = [
   {
