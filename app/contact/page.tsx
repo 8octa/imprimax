@@ -11,7 +11,6 @@ const page = () => {
         Contact
       </h1>
 
-
       <section className="flex flex-col items-center justify-center text-center gap-10 py-15">
         <span className="text-3xl lg:text-5xl">
           Vizitați-ne pe paginile noastre:
@@ -50,7 +49,7 @@ const page = () => {
         </div>
       </section>
 
-      <Link href={"/contact"}>
+      <Link href={"/oferta"}>
         <Button text={"Solicită oferta"} />
       </Link>
     </section>
