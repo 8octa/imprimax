@@ -35,5 +35,10 @@
     "id": 4,
     "service": "Tricouri Personalizate",
     "url": "/tablouri"
+  },
+  {
+    "id": 5,
+    "service": "Bannere",
+    "url": "/tablouri"
   }
 ]

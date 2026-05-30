@@ -60,6 +60,12 @@ const Table = () => {
                         Vezi tabelul de prețuri
                       </Link>
                     );
+                  case 5:
+                    return (
+                      <span>
+                        80 de lei m <sup>2</sup>
+                      </span>
+                    );
                   default:
                     return null;
                 }

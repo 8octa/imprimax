@@ -8,15 +8,39 @@ import Footer from "./components/Footer";
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "https://www.imprimaxsolutions.ro",
   name: "Imprimax Solutions",
   url: "https://www.imprimaxsolutions.ro",
-  logo: "https://www.imprimaxsolutions.ro/sigla.png",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://www.imprimaxsolutions.ro/sigla.png",
+    width: 1200,
+    height: 630,
+  },
   email: "ivanacosmin1@gmail.com",
   telephone: "+40724274102",
   address: {
     "@type": "PostalAddress",
     addressCountry: "RO",
+    addressLocality: "Dambovita",
   },
+  sameAs: [],
+  description:
+    "Servicii profesionale de print digital, productie publicitara, bannere, autocolante, materiale promotionale si personalizari pentru companii.",
+  foundingDate: "1999",
+  priceRange: "$$",
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.imprimaxsolutions.ro",
+  name: "Imprimax Solutions",
+  url: "https://www.imprimaxsolutions.ro",
+  logo: "https://www.imprimaxsolutions.ro/sigla.png",
+  description: "Companie specialista in print digital si productie publicitara",
+  email: "ivanacosmin1@gmail.com",
+  telephone: "+40724274102",
 };
 
 const poppins = Poppins({
@@ -40,7 +64,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Servicii de print digital, productie publicitara, bannere, autocolante, materiale promotionale si personalizari pentru companii.",
+    "Servicii de print digital, productie publicitara, bannere, autocolante, materiale promotionale si personalizari pentru companii. Experti in design si imprimare de calitate inalta.",
 
   keywords: [
     "print digital",
@@ -49,8 +73,12 @@ export const metadata: Metadata = {
     "autocolante",
     "materiale promotionale",
     "personalizare produse",
+    "tricouri personalizate",
     "print Dambovita",
     "print Romania",
+    "servicii imprimare",
+    "design grafic",
+    "publicitate vizuala",
   ],
 
   authors: [{ name: "Imprimax Solutions" }],
@@ -120,7 +148,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData),
+            __html: JSON.stringify([structuredData, organizationSchema]),
           }}
         />
       </body>

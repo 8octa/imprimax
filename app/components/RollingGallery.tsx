@@ -36,7 +36,7 @@ const RollingGallery = ({
   images = images.length > 0 ? images : IMGS;
 
   const [isScreenSizeSm, setIsScreenSizeSm] = useState(
-    window.innerWidth <= 640
+    window.innerWidth <= 640,
   );
   useEffect(() => {
     const handleResize = () => setIsScreenSizeSm(window.innerWidth <= 640);
@@ -55,7 +55,7 @@ const RollingGallery = ({
 
   const transform = useTransform(
     rotation,
-    (val: number) => `rotate3d(0,1,0,${val}deg)`
+    (val: number) => `rotate3d(0,1,0,${val}deg)`,
   );
 
   const startInfiniteSpin = (startAngle: number) => {
@@ -159,7 +159,7 @@ const RollingGallery = ({
             >
               <Image
                 src={url}
-                alt="gallery"
+                alt={`Portfolio work ${i + 1} - Imprimax Solutions print and design project`}
                 className="pointer-events-none h-[120px] w-[300px] rounded-[15px] border-[3px] border-white object-cover
                            transition-transform duration-300 ease-out group-hover:scale-105
                            sm:h-[100px] sm:w-[220px]"

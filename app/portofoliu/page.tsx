@@ -75,7 +75,7 @@ const Portofoliu = () => {
                 <div>
                   <Image
                     src={project.before}
-                    alt="Înainte"
+                    alt={`${project.title} - ${project.description} - before design`}
                     width={500}
                     height={500}
                     className="object-cover rounded"
@@ -85,7 +85,7 @@ const Portofoliu = () => {
                 <div>
                   <Image
                     src={project.after}
-                    alt="După"
+                    alt={`${project.title} - ${project.description} - after design`}
                     width={500}
                     height={500}
                     className="object-cover rounded"
@@ -96,7 +96,7 @@ const Portofoliu = () => {
             ) : (
               <Image
                 src={project.image ?? ""}
-                alt={project.title}
+                alt={`${project.title} - ${project.description} - Imprimax portfolio project`}
                 width={500}
                 height={500}
                 className="object-cover rounded mb-10"

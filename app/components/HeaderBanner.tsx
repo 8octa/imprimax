@@ -60,7 +60,7 @@ export default function HeaderBanner() {
         </p>
       </div>
 
-      <div className="flex flex-row justify-center items-center gap-3">
+      <div className="flex flex-row justify-center items-center gap-5">
         <a
           href="https://www.google.com/maps/place/Strada+Flac%C4%83ra+24,+135300+Moreni/@44.9848732,25.6368105,17z/data=!3m1!4b1!4m6!3m5!1s0x40b257b9aa49a71b:0x85863a310b618c7c!8m2!3d44.9848732!4d25.6393854!16s%2Fg%2F11csm7wvf3?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D"
           target="_blank"
@@ -95,7 +95,7 @@ export default function HeaderBanner() {
               transition: { duration: 0.3 },
             }}
           >
-            <FaFacebook width={15} height={15} />
+            <FaFacebook strokeWidth={2.5} width={15} />
           </motion.div>
         </a>
 
@@ -114,7 +114,7 @@ export default function HeaderBanner() {
               transition: { duration: 0.3 },
             }}
           >
-            <FaInstagram width={15} height={15} />
+            <FaInstagram strokeWidth={2.5} width={15} />
           </motion.div>
         </a>
 
@@ -133,7 +133,7 @@ export default function HeaderBanner() {
               transition: { duration: 0.3 },
             }}
           >
-            <FaTiktok width={15} height={15} />
+            <FaTiktok strokeWidth={2.5} width={15} />
           </motion.div>
         </a>
       </div>
