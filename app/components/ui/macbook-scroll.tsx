@@ -23,6 +23,7 @@ import { IconWorld } from "@tabler/icons-react";
 import { IconCommand } from "@tabler/icons-react";
 import { IconCaretLeftFilled } from "@tabler/icons-react";
 import { IconCaretDownFilled } from "@tabler/icons-react";
+import Image from "next/image";
 
 export const MacbookScroll = ({
   src,
@@ -165,10 +166,12 @@ export const Lid = ({
         className="absolute inset-0 h-96 w-[32rem] rounded-2xl  p-2"
       >
         <div className="absolute inset-0 rounded-lg" />
-        <img
+        <Image
+          width={500}
+          height={500}
           src={src as string}
           alt="imprimax logo"
-          className="absolute inset-0 h-full w-full rounded-lg object-cover "
+          className="absolute inset-0 h-full w-full rounded-lg object-cover z-1000"
         />
       </motion.div>
     </div>

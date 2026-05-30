@@ -1,7 +1,8 @@
 import React from "react";
+import { Feature } from "../components/Feature";
 
 const Despre = () => {
-  return <div>Despre</div>;
+  return <Feature />;
 };
 
 export default Despre;
