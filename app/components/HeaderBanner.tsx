@@ -35,7 +35,7 @@ export default function HeaderBanner() {
           </motion.div>
         </a>
 
-        <a href="mailto:imprimaxsolutions@yahoo.com">
+        <a href="mailto:ivanacosmin1@gmail.com">
           <motion.div
             key="mail"
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
@@ -48,7 +48,7 @@ export default function HeaderBanner() {
             className="flex items-center gap-1"
           >
             <Mail strokeWidth={2.5} width={15} />
-            <p className="hidden xl:block">imprimaxsolutions@yahoo.com</p>
+            <p className="hidden xl:block">ivanacosmin1@gmail.com</p>
           </motion.div>{" "}
         </a>
       </div>
@@ -60,7 +60,7 @@ export default function HeaderBanner() {
       </div>
 
       <a
-        href="https://www.google.com/maps/place/Mobila+Moreni+Elit+Parc/@44.9849227,25.6401875,20.5z/data=!4m16!1m9!3m8!1s0x40b257b84fcea415:0xf366654a82a49664!2sMobila+Moreni+Elit+Parc!8m2!3d44.9849337!4d25.640312!9m1!1b1!16s%2Fg%2F11b6sydf1w!3m5!1s0x40b257b84fcea415:0xf366654a82a49664!8m2!3d44.9849337!4d25.640312!16s%2Fg%2F11b6sydf1w?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
+        href="https://www.google.com/maps/place/Strada+Flac%C4%83ra+24,+135300+Moreni/@44.9848732,25.6368105,17z/data=!3m1!4b1!4m6!3m5!1s0x40b257b9aa49a71b:0x85863a310b618c7c!8m2!3d44.9848732!4d25.6393854!16s%2Fg%2F11csm7wvf3?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D"
         target="_blank"
       >
         <motion.div

@@ -39,7 +39,7 @@ const page = () => {
             />
           </a>
           <a
-            href="https://www.tiktok.com/@cosmin.ivana"
+            href="https://www.tiktok.com/@imprimax_solutions"
             target="_blank"
             rel="noopener noreferrer"
           >
