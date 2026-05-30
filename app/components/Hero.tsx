@@ -10,7 +10,7 @@ export function Hero() {
       <Spotlight />
       <div className="p-4 max-w-7xl mx-auto relative z-10  w-full pt-20 md:pt-0">
         <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/[0.5] bg-opacity-50">
-          Dă culoare <br /> ideilor tale!
+          Soluții complete de print și personalizare
         </h1>
         <p className="my-10 font-normal text-base max-w-lg text-center mx-auto italic">
           Realizăm printuri și personalizări care transformă orice spațiu.

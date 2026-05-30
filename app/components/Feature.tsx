@@ -12,15 +12,15 @@ export function Feature() {
     {
       title: "Cine suntem noi?",
       description:
-        "Imprimax Solutions e visul transformat în realitate al lui Cosmin – un specialist cu ani de experiență în design de mobilier și branding fizic.",
+        "Suntem o echipă pasionată de creativitate și detalii, specializată în print și personalizări care ies în evidență. De la tricouri și căni, până la șepci și materiale promoționale, transformăm ideile în produse reale, colorate și de impact.    Credem că fiecare brand, eveniment sau idee merită să fie văzută. De aceea lucrăm cu tehnologie modernă de print DTF și materiale de calitate, pentru a livra rezultate durabile și cu aspect premium. Nu facem doar print — construim identitate vizuală. Fiecare comandă este pentru noi o combinație între creativitate, precizie și atenție la detalii. Indiferent dacă ai nevoie de un cadou personalizat, de produse pentru afacerea ta sau de materiale promoționale care să atragă priviri, suntem aici să transformăm ideile tale în realitate. Simplu. Rapid. Colorat. Exact așa cum îți imaginezi.",
       skeleton: <SkeletonOne />,
       className:
         "col-span-1 lg:col-span-4 border-b lg:border-r border-dark-gray text-foreground",
     },
     {
-      title: "Epson SureColor S30600",
+      title: "Echipamente profesionale și tehnologie de ultimă generație",
       description:
-        "Credem în personalizare, promptitudine și în soluții bine gândite care funcționează și arată excelent.",
+        "Avem echipamente top de linie pentru print DTF și personalizări de calitate superioară.",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 border-dark-gray",
     },
@@ -90,7 +90,7 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
       className={cn(
         "text-sm md:text-base max-w-xl text-left mx-auto",
         "text-foreground text-center",
-        "text-left max-w-xl mx-0 md:text-sm my-2"
+        "text-left max-w-xl mx-0 md:text-sm my-2",
       )}
     >
       {children}
@@ -147,8 +147,9 @@ export const SkeletonThree = () => {
 export const SkeletonTwo = () => {
   const images = [
     "/despre/imprimanta-1.webp",
+    "/despre/despre (2).webp",
+    "/despre/despre (3).webp",
     "/despre/imprimanta-2.webp",
-    "/despre/imprimanta-3.webp",
   ];
 
   const imageVariants = {

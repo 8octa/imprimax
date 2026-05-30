@@ -25,12 +25,45 @@ const Table = () => {
           <tr key={id}>
             <td className="border border-foreground p-5">{service}</td>
             <td className="border border-foreground p-5">
-              <Link
-                className="text-blue-500 hover:text-blue-600 underline"
-                href={url}
-              >
-                Vezi tot
-              </Link>
+              {(() => {
+                switch (id) {
+                  case 1:
+                    return (
+                      <Link
+                        className="text-blue-500 hover:text-blue-600 underline"
+                        href={url}
+                      >
+                        Vezi tabelul de prețuri
+                      </Link>
+                    );
+                  case 2:
+                    return (
+                      <span>
+                        100 de lei m <sup>2</sup>
+                      </span>
+                    );
+                  case 3:
+                    return (
+                      <Link
+                        className="text-blue-500 hover:text-blue-600 underline"
+                        href={url}
+                      >
+                        Vezi tabelul de prețuri
+                      </Link>
+                    );
+                  case 4:
+                    return (
+                      <Link
+                        className="text-blue-500 hover:text-blue-600 underline"
+                        href={url}
+                      >
+                        Vezi tabelul de prețuri
+                      </Link>
+                    );
+                  default:
+                    return null;
+                }
+              })()}
             </td>
           </tr>
         ))}

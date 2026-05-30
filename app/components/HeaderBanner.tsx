@@ -2,6 +2,7 @@
 import { motion } from "motion/react";
 import ThemeToggleButton from "./ThemeToggleButton";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
 
 export default function HeaderBanner() {
   return (
@@ -55,29 +56,87 @@ export default function HeaderBanner() {
 
       <div className="hidden absolute left-1/2 -translate-x-1/2 md:flex items-center text-center">
         <p className="shine-text-pulse tracking-wider rounded-lg cursor-default">
-          Bine ați venit pe website-ul nostru! <br />
+          Avem ofertă personalizată pentru orice idee <br />
         </p>
       </div>
 
-      <a
-        href="https://www.google.com/maps/place/Strada+Flac%C4%83ra+24,+135300+Moreni/@44.9848732,25.6368105,17z/data=!3m1!4b1!4m6!3m5!1s0x40b257b9aa49a71b:0x85863a310b618c7c!8m2!3d44.9848732!4d25.6393854!16s%2Fg%2F11csm7wvf3?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D"
-        target="_blank"
-      >
-        <motion.div
-          key="location"
-          animate={{ opacity: 1, scale: 1, rotate: 0 }}
-          exit={{ opacity: 0, scale: 1.2, rotate: 30 }}
-          transition={{ duration: 0.3 }}
-          whileHover={{
-            scale: 1.1,
-            transition: { duration: 0.3 },
-          }}
-          className="flex items-center gap-1"
+      <div className="flex flex-row justify-center items-center gap-3">
+        <a
+          href="https://www.google.com/maps/place/Strada+Flac%C4%83ra+24,+135300+Moreni/@44.9848732,25.6368105,17z/data=!3m1!4b1!4m6!3m5!1s0x40b257b9aa49a71b:0x85863a310b618c7c!8m2!3d44.9848732!4d25.6393854!16s%2Fg%2F11csm7wvf3?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
         >
-          <MapPin strokeWidth={2.5} width={15} />
-          <p className="hidden xl:block">Hai în atelier!</p>
-        </motion.div>
-      </a>
+          <motion.div
+            key="location"
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            exit={{ opacity: 0, scale: 1.2, rotate: 30 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.3 },
+            }}
+            className="flex items-center gap-1"
+          >
+            <MapPin strokeWidth={2.5} width={15} />
+            <p className="hidden xl:block">Hai în atelier!</p>
+          </motion.div>
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61577033497907"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            key="facebook"
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            exit={{ opacity: 0, scale: 1.2, rotate: 30 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.3 },
+            }}
+          >
+            <FaFacebook width={15} height={15} />
+          </motion.div>
+        </a>
+
+        <a
+          href="https://www.instagram.com/imprimax_solutions/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            key="instagram"
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            exit={{ opacity: 0, scale: 1.2, rotate: 30 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.3 },
+            }}
+          >
+            <FaInstagram width={15} height={15} />
+          </motion.div>
+        </a>
+
+        <a
+          href="https://www.tiktok.com/@imprimax_solutions"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.div
+            key="tiktok"
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            exit={{ opacity: 0, scale: 1.2, rotate: 30 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.3 },
+            }}
+          >
+            <FaTiktok width={15} height={15} />
+          </motion.div>
+        </a>
+      </div>
     </motion.div>
   );
 }
