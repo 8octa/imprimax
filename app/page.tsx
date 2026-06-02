@@ -107,8 +107,9 @@ const Acasa = () => {
           <GrUserExpert size={25} />
           <h3>experiență tehnică</h3>
           <p className="max-w-sm text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
-            quisquam necessitatibus iusto facere reiciendis non!
+            Avem experiență tehnică solidă în producția de materiale personalizate,
+            cu echipamente profesionale, procese eficiente și atenție la detalii pentru
+            fiecare proiect de print și branding.
           </p>
         </div>
       </div>
