@@ -1,6 +1,4 @@
-import Button from "@/app/components/Button";
 import { Hero } from "@/app/components/Hero";
-import Link from "next/link";
 import { MyCarousel } from "@/app/components/MyCarousel";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { MdDashboardCustomize } from "react-icons/md";
