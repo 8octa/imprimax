@@ -2,22 +2,24 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Imprimax Solutions | Print Digital & Publicitate Românești",
+  title: "Contact și adresă atelier print Moreni",
   description:
-    "Contactează Imprimax Solutions pentru soluții de print digital, publicitate și personalizări. Răspunsuri rapide și servicii profesionale în România.",
+    "Contactează Imprimax Solutions pentru print și personalizări în Moreni, Dâmbovița. Ne găsești pe Strada Flacăra 24, cod poștal 135300. Sună la 0724 274 102.",
   keywords: [
-    "contact imprimax",
-    "contact print digital",
-    "servicii print",
-    "personalizare produse",
+    "contact Imprimax Solutions",
+    "print Moreni adresă",
+    "print Dâmbovița",
+    "print 135300",
+    "Strada Flacăra 24 Moreni",
+    "Cosmin Ivana contact",
   ],
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
-    title: "Contact Imprimax Solutions",
+    title: "Contact Imprimax Solutions - print în Moreni",
     description:
-      "Contactează Imprimax Solutions pentru print digital, publicitate și personalizări cu servicii profesionale în România.",
+      "Vizitează atelierul Imprimax Solutions de pe Strada Flacăra 24, Moreni, 135300, județul Dâmbovița, sau sună la 0724 274 102.",
     url: "https://www.imprimaxsolutions.ro/contact",
     type: "website",
     locale: "ro_RO",
@@ -25,9 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Contact Imprimax Solutions",
-    description:
-      "Contactează Imprimax Solutions pentru servicii profesionale de print și publicitate.",
+    title: "Contact Imprimax Solutions - print în Moreni",
+    description: "Strada Flacăra 24, Moreni, 135300. Sună la 0724 274 102.",
   },
 };
 

@@ -10,20 +10,21 @@ export function Hero() {
       <Spotlight />
       <div className="p-4 max-w-7xl mx-auto relative z-10  w-full pt-20 md:pt-0">
         <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/[0.5] bg-opacity-50">
-          Soluții complete de print și personalizare
+          Print în Moreni și produse personalizate
         </h1>
         <p className="my-10 font-normal text-base max-w-lg text-center mx-auto italic">
-          Realizăm printuri și personalizări care transformă orice spațiu.
+          Print digital, tricouri, bannere, stickere și tablouri canvas în
+          Moreni, județul Dâmbovița.
         </p>
       </div>
-      <Link href={"/oferta"}>
+      <Link href={"/contact"}>
         <Button text={"Solicită oferta"} />
       </Link>
 
       <p className="max-w-screen-md text-center mt-10 border border-foreground/[0.04] p-5 md:p-15">
-        Imprimax Solutions e atelierul tău de încredere din Moreni pentru print
-        digital, gravură și obiecte personalizate. Cu experiență tehnică în
-        design și livrare rapidă, aducem ideile tale la viață.
+        Imprimax Solutions este atelierul tău de print din Moreni, la Strada
+        Flacăra 24, cod poștal 135300. Realizăm print digital, gravură și
+        produse personalizate pentru clienți din Dâmbovița și din toată România.
       </p>
     </div>
   );

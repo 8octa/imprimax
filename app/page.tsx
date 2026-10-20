@@ -113,10 +113,6 @@ const Acasa = () => {
           </p>
         </div>
       </div>
-
-      <Link href={"/oferta"}>
-        <Button text={"Solicită oferta"} />
-      </Link>
     </section>
   );
 };

@@ -2,23 +2,25 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Despre Imprimax Solutions | Experți în Print & Publicitate",
+  title: "Despre Imprimax Solutions și Cosmin Ivana",
   description:
-    "Descoperi povestea Imprimax Solutions, echipa de experți în print digital, publicitate și personalizări. Servicii profesionale în România din 1999.",
+    "Află povestea Imprimax Solutions, atelier de print și personalizare din Moreni, Dâmbovița, și despre Cosmin Ivana. Experiență în print din 1999.",
   keywords: [
-    "despre imprimax",
-    "echipa print",
-    "experți imprimare",
-    "servicii print",
-    "companie print",
+    "Cosmin Ivana",
+    "Ivana print",
+    "Imprimax Solutions Moreni",
+    "atelier print Moreni",
+    "print Dâmbovița",
+    "despre Imprimax",
+    "servicii de print din 1999",
   ],
   alternates: {
     canonical: "/despre",
   },
   openGraph: {
-    title: "Despre Imprimax Solutions",
+    title: "Despre Imprimax Solutions și Cosmin Ivana",
     description:
-      "Echipa de experți Imprimax Solutions oferă soluții profesionale de print, publicitate și personalizări în România.",
+      "Povestea atelierului Imprimax Solutions din Moreni și a echipei din spatele serviciilor de print și personalizare.",
     url: "https://www.imprimaxsolutions.ro/despre",
     type: "website",
     locale: "ro_RO",
@@ -26,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Despre Imprimax Solutions",
-    description: "Experți în print digital și publicitate profesională.",
+    title: "Despre Imprimax Solutions și Cosmin Ivana",
+    description: "Află povestea atelierului nostru de print din Moreni.",
   },
 };
 

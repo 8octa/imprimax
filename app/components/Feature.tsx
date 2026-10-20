@@ -40,13 +40,10 @@ export function Feature() {
     },
   ];
   return (
-    <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
-      <div className="px-8">
-        <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/[0.5] bg-opacity-50 my-50">
-          Despre Noi
-        </h1>
-      </div>
-
+    <section
+      id="povestea-noastra"
+      className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto"
+    >
       <div className="relative border-dark-gray">
         <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md">
           {features.map((feature) => (
@@ -58,7 +55,7 @@ export function Feature() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

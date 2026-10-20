@@ -2,23 +2,23 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Portofoliu Imprimax | Lucrări de Print & Design Profesional",
+  title: "Portofoliu de print și personalizări Moreni",
   description:
-    "Vezi portofoliul Imprimax Solutions cu peste 100 lucrări de print digital, design publicitar, bannere și personalizări pentru clienți corporativi.",
+    "Vezi lucrări realizate de Imprimax Solutions: print digital, bannere, tablouri canvas și produse personalizate în Moreni, județul Dâmbovița.",
   keywords: [
-    "portofoliu print",
-    "exemple design",
-    "galerie imprimare",
-    "lucrari print",
-    "proiecte publicitate",
+    "portofoliu print Moreni",
+    "lucrări print Dâmbovița",
+    "exemple tablouri canvas",
+    "bannere personalizate",
+    "Imprimax Solutions",
   ],
   alternates: {
     canonical: "/portofoliu",
   },
   openGraph: {
-    title: "Portofoliu Imprimax Solutions",
+    title: "Portofoliu print și personalizări | Imprimax Solutions",
     description:
-      "Galerie cu cele mai bune lucrări de print, design și publicitate realizate de echipa Imprimax.",
+      "Galerie cu lucrări de print și produse personalizate realizate de Imprimax Solutions în Moreni.",
     url: "https://www.imprimaxsolutions.ro/portofoliu",
     type: "website",
     locale: "ro_RO",
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Portofoliu Imprimax Solutions",
-    description: "Lucrări profesionale de print și design.",
+    title: "Portofoliu print și personalizări",
+    description: "Lucrări realizate de Imprimax Solutions în Moreni.",
   },
 };
 

@@ -2,24 +2,36 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Produse & Servicii Print Digital | Imprimax Solutions",
+  title: "Produse personalizate și print în Moreni",
   description:
-    "Descoperi gama completă de produse și servicii Imprimax: print digital, bannere, autocolante, tricouri personalizate, obiecte promotionale și publicitate vizuală.",
+    "Comandă tricouri clasice și polo, stickere laminate sau nelaminate, autocolante, plăci PVC, bannere, tablouri canvas și cu sticlă, hanorace și bluze. Print în Moreni, Dâmbovița.",
   keywords: [
-    "produse print",
-    "servicii print",
-    "bannere publicitate",
-    "tricouri personalizate",
-    "obiecte promotionale",
+    "produse print Moreni",
+    "print Ivana",
+    "Cosmin Ivana",
+    "Ivana",
+    "tricouri clasice",
+    "stickere nelaminate",
+    "stickere laminate",
+    "tricouri polo",
     "autocolante",
+    "plăci PVC",
+    "tricouri oversized",
+    "bannere Moreni",
+    "banner",
+    "tablouri canvas",
+    "tricourile tale",
+    "tricouri personalizate",
+    "tablouri cu sticlă",
+    "hanorace și bluze",
   ],
   alternates: {
     canonical: "/produse",
   },
   openGraph: {
-    title: "Produse & Servicii Imprimax Solutions",
+    title: "Produse personalizate și print în Moreni | Imprimax Solutions",
     description:
-      "Gama completă de servicii de print digital, publicitate și personalizări pentru afacerea ta.",
+      "Descoperă gama de print și produse personalizate realizate de Imprimax Solutions în Moreni, Dâmbovița.",
     url: "https://www.imprimaxsolutions.ro/produse",
     type: "website",
     locale: "ro_RO",
@@ -27,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Produse & Servicii Imprimax",
+    title: "Produse personalizate și print în Moreni",
     description:
-      "Print digital, bannere, personalizări și publicitate profesională.",
+      "Tricouri, stickere, autocolante, bannere și tablouri personalizate în Moreni.",
   },
 };
 

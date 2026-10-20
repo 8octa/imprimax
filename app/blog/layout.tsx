@@ -2,24 +2,23 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Blog - Articole despre Print Digital și Publicitate | Imprimax Solutions",
+  title: "Ghiduri și sfaturi despre print",
   description:
-    "Citește articole din blogul Imprimax Solutions despre print digital, design publicitar, inovații și sfaturi practice pentru afacerea ta.",
+    "Citește ghidurile Imprimax Solutions despre pregătirea fișierelor pentru tipar, print digital și personalizarea produselor. Sfaturi de la atelierul din Moreni.",
   keywords: [
-    "blog print",
-    "articole imprimare",
-    "sfaturi print",
-    "design publicitar",
-    "inovații print",
+    "ghid print",
+    "sfaturi print digital",
+    "pregătire fișiere pentru tipar",
+    "print Moreni",
+    "Imprimax Solutions",
   ],
   alternates: {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Blog Imprimax Solutions",
+    title: "Ghiduri și sfaturi despre print | Imprimax Solutions",
     description:
-      "Articole despre print digital, design și soluții de publicitate pentru afacerea ta.",
+      "Ghiduri practice despre fișiere pentru tipar, print digital și personalizări, de la Imprimax Solutions din Moreni.",
     url: "https://www.imprimaxsolutions.ro/blog",
     type: "website",
     locale: "ro_RO",
@@ -27,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Blog Imprimax Solutions",
-    description: "Articole și sfaturi despre print digital și publicitate.",
+    title: "Ghiduri și sfaturi despre print",
+    description: "Articole practice despre print digital și personalizare.",
   },
 };
 

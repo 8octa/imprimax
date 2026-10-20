@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://www.imprimaxsolutions.ro",
+  "@id": "https://www.imprimaxsolutions.ro/#localbusiness",
   name: "Imprimax Solutions",
   url: "https://www.imprimaxsolutions.ro",
   logo: {
@@ -22,25 +22,69 @@ const structuredData = {
   address: {
     "@type": "PostalAddress",
     addressCountry: "RO",
-    addressLocality: "Dambovita",
+    streetAddress: "Strada Flacăra 24",
+    addressLocality: "Moreni",
+    addressRegion: "Dâmbovița",
+    postalCode: "135300",
   },
-  sameAs: [],
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 44.9848732,
+    longitude: 25.6393854,
+  },
+  areaServed: [
+    { "@type": "City", name: "Moreni" },
+    { "@type": "AdministrativeArea", name: "Dâmbovița" },
+    { "@type": "Country", name: "România" },
+  ],
+  sameAs: [
+    "https://www.facebook.com/profile.php?id=61577033497907",
+    "https://www.instagram.com/imprimax_solutions/",
+    "https://www.tiktok.com/@imprimax_solutions",
+  ],
   description:
-    "Servicii profesionale de print digital, productie publicitara, bannere, autocolante, materiale promotionale si personalizari pentru companii.",
+    "Atelier de print digital și producție publicitară în Moreni, județul Dâmbovița. Bannere, autocolante, textile și produse personalizate.",
   foundingDate: "1999",
   priceRange: "$$",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Produse și servicii de print Imprimax Solutions",
+    itemListElement: [
+      "Tricouri clasice",
+      "Stickere nelaminate",
+      "Stickere laminate",
+      "Tricouri polo",
+      "Autocolante",
+      "Plăci PVC",
+      "Tricouri oversized",
+      "Bannere",
+      "Tablouri canvas",
+      "Tricourile tale",
+      "Tablouri cu sticlă",
+      "Hanorace și bluze",
+    ].map((name) => ({
+      "@type": "OfferCatalog",
+      name,
+    })),
+  },
 };
 
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://www.imprimaxsolutions.ro",
+  "@id": "https://www.imprimaxsolutions.ro/#organization",
   name: "Imprimax Solutions",
   url: "https://www.imprimaxsolutions.ro",
   logo: "https://www.imprimaxsolutions.ro/sigla.png",
-  description: "Companie specialista in print digital si productie publicitara",
+  description:
+    "Atelier de print digital și producție publicitară din Moreni, Dâmbovița.",
   email: "ivanacosmin1@gmail.com",
   telephone: "+40724274102",
+  sameAs: [
+    "https://www.facebook.com/profile.php?id=61577033497907",
+    "https://www.instagram.com/imprimax_solutions/",
+    "https://www.tiktok.com/@imprimax_solutions",
+  ],
 };
 
 const poppins = Poppins({
@@ -59,37 +103,48 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.imprimaxsolutions.ro"),
 
   title: {
-    default: "Print Digital si Productie Publicitara | Imprimax Solutions",
+    default: "Print în Moreni, Dâmbovița | Imprimax Solutions",
     template: "%s | Imprimax Solutions",
   },
 
   description:
-    "Servicii de print digital, productie publicitara, bannere, autocolante, materiale promotionale si personalizari pentru companii. Experti in design si imprimare de calitate inalta.",
+    "Imprimax Solutions oferă print digital în Moreni, județul Dâmbovița (135300): tricouri personalizate, bannere, stickere, autocolante și tablouri canvas. Sună pentru o ofertă.",
 
   keywords: [
     "print digital",
     "productie publicitara",
-    "bannere",
+    "print Moreni",
+    "print Dâmbovița",
+    "print România",
+    "print Ivana",
+    "Cosmin Ivana",
+    "Ivana",
+    "print 135300",
+    "print digital Moreni",
+    "tipografie Moreni",
+    "producție publicitară Moreni",
+    "tricouri clasice",
+    "stickere nelaminate",
+    "stickere laminate",
+    "tricouri polo",
     "autocolante",
-    "materiale promotionale",
-    "personalizare produse",
+    "plăci PVC",
+    "tricouri oversized",
+    "bannere",
+    "tablouri canvas",
+    "tricourile tale",
     "tricouri personalizate",
-    "print Dambovita",
-    "print Romania",
-    "servicii imprimare",
-    "design grafic",
-    "publicitate vizuala",
-    "print moreni",
+    "tablouri cu sticlă",
+    "hanorace și bluze",
+    "print personalizat Moreni",
+    "personalizare textile",
+    "publicitate vizuală",
+    "design grafic Moreni",
+    "materiale promoționale Moreni",
     "bannere moreni",
     "autocolante moreni",
     "tricouri personalizate moreni",
-    "materiale promotionale moreni",
-    "imprimare moreni",
-    "design grafic moreni",
-    "publicitate moreni",
-    "personalizare produse moreni",
-    "print digital moreni",
-    "productie publicitara moreni",
+    "Moreni Dâmbovița 135300",
   ],
 
   authors: [{ name: "Imprimax Solutions" }],
@@ -101,9 +156,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Imprimax Solutions",
+    title: "Print în Moreni, Dâmbovița | Imprimax Solutions",
     description:
-      "Servicii profesionale de print digital si productie publicitara.",
+      "Print digital, tricouri personalizate, bannere, stickere și tablouri canvas în Moreni, Dâmbovița. Atelier Imprimax Solutions, Strada Flacăra 24, 135300.",
     url: "https://www.imprimaxsolutions.ro",
     siteName: "Imprimax Solutions",
     locale: "ro_RO",
@@ -120,9 +175,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Imprimax Solutions",
+    title: "Print în Moreni, Dâmbovița | Imprimax Solutions",
     description:
-      "Servicii profesionale de print digital si productie publicitara.",
+      "Print digital și produse personalizate în Moreni, Dâmbovița. Cere o ofertă de la Imprimax Solutions.",
     images: ["/sigla.png"],
   },
 
